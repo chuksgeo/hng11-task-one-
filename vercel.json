@@ -12,6 +12,7 @@
         "APP_ENV": "production",
         "APP_DEBUG": "true",
         "APP_URL": "https://hng11-backend-task-one.com",
+        "APP_KEY":"base64:zWR/hL3lDcLs3lwUFVNvCBxTgCz54ju+pQusOl1hr7Q=",
 
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
