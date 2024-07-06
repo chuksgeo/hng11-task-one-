@@ -16,8 +16,8 @@ class AuthController extends Controller
         $ip = request()->ip();
         $visitor = request()->query('visitor_name');
         
-        // $location = Location::get('105.48.250.156');
-        $location = Location::get($ip);
+        $location = Location::get('105.48.250.156');
+        // $location = Location::get($ip);
 
         
         $weatherClient = new Weather();

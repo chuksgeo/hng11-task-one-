@@ -26,5 +26,5 @@ Route::get('home', function () {
 
 Route::group(['prefix' => 'v1',], function() {
 
-    Route::get('hello',  [ AuthController::class, 'welcome'] );
+    Route::get('hello',  [AuthController::class, 'welcome'] );
 });
