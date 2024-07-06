@@ -24,7 +24,7 @@ Route::get('home', function () {
 });
 
 
-Route::group(['prefix' => 'v1',], function() {
+Route::group(['prefix' => 'api',], function() {
 
     Route::get('hello',  [AuthController::class, 'welcome'] );
 });
