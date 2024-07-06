@@ -18,7 +18,8 @@ class AuthController extends Controller
         $visitor = request()->query('visitor_name');
 
         
-        $location = Location::get('105.48.250.156');
+        // $location = Location::get('105.48.250.156');
+        $location = Location::get();
         // $location = Location::get($ip);
 
         
