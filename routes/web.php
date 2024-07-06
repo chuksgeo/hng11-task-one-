@@ -20,6 +20,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/home', function () {
+    return response()->json('e reach', 200);
+});
+
 
 
 Route::get('/api/hello', function (Request $request) {
