@@ -19,10 +19,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', function () {
+Route::get('home', function () {
     return response()->json('e reach', 200);
 });
 
 
+Route::group(['prefix' => 'v1',], function() {
 
-Route::get('/api/hello',  [ AuthController::class, 'welcome'] );
+    Route::get('hello',  [ AuthController::class, 'welcome'] );
+});
