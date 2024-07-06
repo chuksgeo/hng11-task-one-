@@ -13,10 +13,10 @@ class AuthController extends Controller
     
     public function welcome(Request $request)
     {
-        $ip = request()->ip();
+        // $ip = request()->ip();
+        $ip = $request->ip();
         $visitor = request()->query('visitor_name');
 
-        dd($ip);
         
         $location = Location::get('105.48.250.156');
         // $location = Location::get($ip);
