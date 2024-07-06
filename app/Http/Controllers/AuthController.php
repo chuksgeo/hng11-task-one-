@@ -23,7 +23,7 @@ class AuthController extends Controller
 
         $visitor_name = ($visitor) ? $visitor : 'Guest';    
         
-        $response['client_ip'] =  $ip;
+        // $response['client_ip'] =  $ip;
         $response['location'] = $location->cityName ?? $location->countryName;
         $response['salutation'] =' Hello, '. trim($visitor_name, "\"' \t\n\r\0\x0B") . '!, the temperature is '. $weather->main->temp . ' degrees Celcius in ' .  $location->cityName;
         return response()->json($response, 200); 
